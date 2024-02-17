@@ -491,11 +491,11 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(386, 291);
+            this.label11.Location = new System.Drawing.Point(378, 278);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.Size = new System.Drawing.Size(106, 13);
             this.label11.TabIndex = 16;
-            this.label11.Text = "label11";
+            this.label11.Text = "Dark Side Propensity";
             // 
             // Form1
             // 
