@@ -69,6 +69,7 @@
             this.num_years_experience = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
             this.pic_cape_color = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -487,11 +488,21 @@
             this.pic_cape_color.TabStop = false;
             this.pic_cape_color.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(386, 291);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 13);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "label11";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.pic_cape_color);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.num_years_experience);
@@ -567,6 +578,7 @@
         private System.Windows.Forms.NumericUpDown num_years_experience;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pic_cape_color;
+        private System.Windows.Forms.Label label11;
     }
 }
 
