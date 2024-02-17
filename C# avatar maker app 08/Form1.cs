@@ -46,7 +46,7 @@ using System.Windows.Forms;
 //------------- C# avatar maker app 08 How to use the trackbar control -------------------------------------------
 //ref link:https://www.youtube.com/watch?v=H5cPurr1EeE&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=10
 
-// label(Dark Side Propensity), trackBar, 
+// label(Dark Side Propensity),label(0/lbl_dark_side), trackBar(minimum:-10/largeChange:3), 
 
 namespace HeroMaker
 {
@@ -126,6 +126,12 @@ namespace HeroMaker
             decimal years_experience = num_years_experience.Value;
             //-----END-------- C# avatar maker app 06 How to use a number picker ------------------------------------------------
 
+            //----START------- C# avatar maker app 08 How to use the trackbar control -------------------------------------------
+            // dark side
+            int dark_side = 0;
+            dark_side = trk_dark_side.Value;
+            //-----END------ C# avatar maker app 08 How to use the trackbar control -------------------------------------------
+
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             string status_message = "Your new hero is " + txt_name.Text + "." +
                 " \nYou have selected the following abilities: ";
@@ -179,6 +185,10 @@ namespace HeroMaker
             status_message += "\nThe cape color for your hero is " + pic_cape_color.BackColor.ToString();
             //-----END------- C# avatar maker app 07 How to use the color picker ----------------------------------------------
 
+            //----START------- C# avatar maker app 08 How to use the trackbar control -------------------------------------------
+            status_message += "\nThe dark side probability for your hero is " + dark_side;
+            //-----END------ C# avatar maker app 08 How to use the trackbar control -------------------------------------------
+
             //------START---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
             MessageBox.Show(status_message);
             //------END---------- C# avatar maker app 01 How to use checkboxes tutorial -----------------------------
@@ -213,6 +223,13 @@ namespace HeroMaker
             }
         }
         //------END------- C# avatar maker app 07 How to use the color picker ----------------------------------------------
+
+        //----START------- C# avatar maker app 08 How to use the trackbar control -------------------------------------------
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            lbl_dark_side.Text = trk_dark_side.Value.ToString();
+        }
+        //-----END------ C# avatar maker app 08 How to use the trackbar control -------------------------------------------
 
 
 

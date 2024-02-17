@@ -57,7 +57,7 @@
             this.scroll_strength = new System.Windows.Forms.HScrollBar();
             this.scroll_stamina = new System.Windows.Forms.HScrollBar();
             this.scroll_speed = new System.Windows.Forms.HScrollBar();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trk_dark_side = new System.Windows.Forms.TrackBar();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.date_fate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -70,10 +70,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pic_cape_color = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.lbl_dark_side = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trk_dark_side)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_years_experience)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cape_color)).BeginInit();
@@ -383,14 +384,15 @@
             this.scroll_speed.TabIndex = 0;
             this.scroll_speed.Scroll += new System.Windows.Forms.ScrollEventHandler(this.scroll_speed_Scroll);
             // 
-            // trackBar1
+            // trk_dark_side
             // 
-            this.trackBar1.LargeChange = 3;
-            this.trackBar1.Location = new System.Drawing.Point(490, 278);
-            this.trackBar1.Minimum = -10;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(104, 45);
-            this.trackBar1.TabIndex = 1;
+            this.trk_dark_side.LargeChange = 3;
+            this.trk_dark_side.Location = new System.Drawing.Point(490, 278);
+            this.trk_dark_side.Minimum = -10;
+            this.trk_dark_side.Name = "trk_dark_side";
+            this.trk_dark_side.Size = new System.Drawing.Size(104, 45);
+            this.trk_dark_side.TabIndex = 1;
+            this.trk_dark_side.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // groupBox4
             // 
@@ -499,18 +501,28 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Dark Side Propensity";
             // 
+            // lbl_dark_side
+            // 
+            this.lbl_dark_side.AutoSize = true;
+            this.lbl_dark_side.Location = new System.Drawing.Point(378, 291);
+            this.lbl_dark_side.Name = "lbl_dark_side";
+            this.lbl_dark_side.Size = new System.Drawing.Size(13, 13);
+            this.lbl_dark_side.TabIndex = 17;
+            this.lbl_dark_side.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_dark_side);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.pic_cape_color);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.num_years_experience);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.trk_dark_side);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label2);
@@ -527,7 +539,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trk_dark_side)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_years_experience)).EndInit();
@@ -560,7 +572,7 @@
         private System.Windows.Forms.RadioButton rdo_jetpack;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.HScrollBar scroll_speed;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trk_dark_side;
         private System.Windows.Forms.HScrollBar scroll_strength;
         private System.Windows.Forms.HScrollBar scroll_stamina;
         private System.Windows.Forms.Label label5;
@@ -581,6 +593,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pic_cape_color;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl_dark_side;
     }
 }
 
