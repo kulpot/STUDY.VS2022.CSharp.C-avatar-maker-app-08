@@ -46,6 +46,8 @@ using System.Windows.Forms;
 //------------- C# avatar maker app 08 How to use the trackbar control -------------------------------------------
 //ref link:https://www.youtube.com/watch?v=H5cPurr1EeE&list=PLhPyEFL5u-i2w2fa7ErcbkbEkjqLh7Io1&index=10
 
+// label(Dark Side Propensity), trackBar, 
+
 namespace HeroMaker
 {
     public partial class Form1 : Form
